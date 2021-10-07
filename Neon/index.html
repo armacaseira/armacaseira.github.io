@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neon</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="256.png">
+  <link rel="stylesheet" type="text/css" href="main.css" media="all">
+  <meta name="theme-color" content="#00a5ef">
+
+<body>
+  <style>
+  body {
+  background-color: #00a5ef;
+  color: #ffffff;
+  font-size: 28px;
+  }
+  </style>
+  <center>
+  <b><p>Thaise, infelizmente sua conta Neon se encontra bloqueada.</p><p>
+  Entre em contato com o Time Neon pelo número:</p><p> 0800 326 0844</p><p> ou por nossas redes sociais.</p></b>
+  </center>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function () {
+          console.log('service worker registered');
+        })
+        .catch(function () {
+          console.warn('service worker failed');
+        });
+    }
+  </script>
+ 
+</html>
